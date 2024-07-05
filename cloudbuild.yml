@@ -4,7 +4,7 @@ steps:
       [
         "build",
         "-t",
-        "southamerica-east1-docker.pkg.dev/microservices-curse-428420/image-registry/auth-ms",
+        "southamerica-east1-docker.pkg.dev/microservices-curse-428420/image-registry/payments-ms",
         "-f",
         "dockerfile.prod",
         "--platform=linux/amd64",
@@ -14,7 +14,7 @@ steps:
     args:
       [
         "push",
-        "southamerica-east1-docker.pkg.dev/microservices-curse-428420/image-registry/auth-ms",
+        "southamerica-east1-docker.pkg.dev/microservices-curse-428420/image-registry/payments-ms",
       ]
 options:
   logging: CLOUD_LOGGING_ONLY
