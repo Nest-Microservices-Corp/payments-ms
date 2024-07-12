@@ -33,6 +33,8 @@ async function bootstrap() {
   await app.startAllMicroservices();
   
   await app.listen( envs.port );
+
+  console.log('Healt Check added');
   
   logger.log(`Payments Ms Running ::: ✅ ${ envs.port }`);
 
